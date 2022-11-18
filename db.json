@@ -1,0 +1,29 @@
+{
+  "news": [
+    {
+      "id": 1,
+      "name": "my first news",
+      "description": "lorem ipsum dolor ",
+      "category": "Hot News"
+    },
+    {
+      "id": 2,
+      "name": "my first news 2",
+      "description": "lorem ipsum dolor 2",
+      "category": "Hot News"
+    },
+    {
+      "id": 3,
+      "name": "my first news 3",
+      "description": "lorem ipsum dolor 3",
+      "category": "Hot News"
+    },
+    {
+      "id": 4,
+      "name": "my first news 4",
+      "description": "lorem ipsum dolor 4",
+      "category": "Hot News"
+    }
+  ],
+  "filters": ["all", "sport", "hot", "world"]
+}
