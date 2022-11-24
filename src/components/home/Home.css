@@ -1,0 +1,78 @@
+.home {
+    margin-left: 9.65vw;
+    position: relative;
+}
+
+.music {
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    width: 10vw;
+    height: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.music span {
+    font-size: 1.3vw;
+    font-weight: 600;
+}
+
+.off {
+    color: #b8344c;
+    margin-left: .60vw;
+    cursor: pointer;
+}
+
+.home .hamburger {
+    display: none;
+}
+
+/* hamburger css */
+
+
+
+/* hamburger css */
+
+@media screen and (max-width: 768px) {
+    .home {
+        margin-left: 0vw;
+    }
+
+    .music {
+        top: 2vw;
+        left: 1vw;
+        width: 13vw;
+        height: 2vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        user-select: none;
+    }
+
+    .music span {
+        font-size: 2.3vw;
+        font-weight: 600;
+    }
+
+    .home .hamburger {
+        position: fixed;
+        top: 3vw;
+        right: 3vw;
+        width: 7vw;
+        height: 7vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        user-select: none;   
+        /* background-color: #682330; */
+        z-index: 20;
+    }
+
+    .hamburgerIcon {
+        font-size: 8vw;
+        color: #682330;
+    }
+}

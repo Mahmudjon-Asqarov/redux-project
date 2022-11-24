@@ -1,0 +1,29 @@
+.myCanvasDesktop {
+    display: block !important;
+}
+
+.myCanvasMobile {
+    display: none !important;
+}
+
+
+
+/* @media screen and (max-width: 1100px) {
+    .myCanvasDesktop {
+        display: none !important;
+    }
+
+    .myCanvasMobile {
+        display: block !important;
+    }
+} */
+
+@media screen and (max-width: 501px) {
+    .myCanvasDesktop {
+        display: none !important;
+    }
+
+    .myCanvasMobile {
+        display: block !important;
+    }
+}
