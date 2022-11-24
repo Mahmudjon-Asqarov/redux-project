@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+/* button hover */
+.button2 {
+    position: relative;
+    display: inline-block;
+    padding: 1vw 2.3vw;
+    border-radius: 0.18vw;
+    color: #682330;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    margin: 2vw 0;
+    font-family: "Roboto", sans-serif;
+    filter: hue-rotate(0deg);
+    border: 0.10vw solid #682330;
+    transition: all 0.1s linear;
+    cursor: pointer;
+    user-select: none;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+.button2:hover {
+    border: 0.06vw solid transparent;
+}
+
+.button2:hover span {
+    position: absolute;
+    display: block;
+}
+
+.button2:hover span:nth-child(1) {
+    filter: hue-rotate(0deg);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0.16vw;
+    background: linear-gradient(90deg, transparent, #3a86ff);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.button2:hover span:nth-child(2) {
+    filter: hue-rotate(60deg);
+    top: -100%;
+    right: 0;
+    width: 0.16vw;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #3a86ff);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.button2:hover span:nth-child(3) {
+    filter: hue-rotate(120deg);
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background: linear-gradient(270deg, transparent, #3a86ff);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+        height: 0.16vw;
+    }
+
+    50%,
+    100% {
+        height: 0.16vw;
+        right: 100%;
+    }
+}
+
+.button2:hover span:nth-child(4) {
+    filter: hue-rotate(300deg);
+    bottom: -100%;
+    left: 0;
+    width: 0.16vw;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #3a86ff);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+/* button hover */
+
+.banner {
+    height: 100vh;
+    background: #FFF6E0;
+    display: flex;
+    position: relative;
+}
+
+.banner__text {
+    width: 55%;
+    padding: 7vw 0 0 2vw;
+}
+
+.banner__text h1 {
+    font-size: 4.9vw;
+    color: #682330;
+    letter-spacing: .36vw;
+    font-weight: 800;
+}
+
+.rubberFlex {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.rubberBand {
+    font-size: 5.3vw;
+    color: #682330;
+    letter-spacing: .40vw;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    transition: all .3s;
+}
+
+.rubberBand:hover {
+    animation: rubberBand .8s ease-out;
+    color: #b3253f;
+}
+
+.leftRubber {
+    margin-right: 2vw;
+}
+
+.banner__text p {
+    font-size: 1.2vw;
+    color: #682330;
+    letter-spacing: .50vw;
+    margin: .50vw 0;
+}
+
+.banner__img {
+    width: 40%;
+    padding: 9vw 0 0 0;
+}
+
+@keyframes animate {
+    100% {
+        background-position: 100%;
+    }
+}
+
+
+.home_body_image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 4vh 10vh 0 0; */
+    position: relative;
+}
+
+.home_body_image>.item_image {
+    width: 28vw;
+    height: 28vw;
+    border-radius: 50%;
+    /* border: 1.6vw solid #682330; */
+    box-shadow: 0 0 1.6vw 0 #aaa;
+    position: relative;
+    overflow: hidden;
+    border: 1vw solid #D5CCBE;
+}
+
+.item_image::after {
+    content: "";
+    position: absolute;
+    width: 33vw;
+    height: 33vw;
+    border-radius: 50%;
+    top: -2vw;
+    left: -2vw;
+    background: rgb(18, 18, 18);
+    background: radial-gradient(circle, rgba(18, 18, 18, 0.11948529411764708) 0%, rgba(22, 22, 22, 1) 100%);
+}
+
+.home_body_image>.item_image>img {
+    width: 100%;
+    border-radius: 50%;
+    z-index: 9;
+}
+
+
+/* animation bottom */
+.round {
+    width: 4vw;
+    height: 4vw;
+    position: absolute;
+    left: 43.5%;
+    bottom: 2vw;
+    border-radius: 100%;
+    transform: rotate(90deg);
+    display: flex;
+    justify-content: center;
+}
+
+#cta {
+    width: 100%;
+    cursor: pointer;
+    position: absolute;
+}
+
+#cta .arrow {
+    left: 30%;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 0;
+    margin-left: 0;
+    width: 2vw;
+    height: 2vw;
+    background-size: contain;
+    top: 1.3vw;
+}
+
+.segunda {
+    margin-left: 1vw;
+}
+
+.next {
+    background-image: url(https://aiconica.net/previews/arrow-right-icon-435.png);
+}
+
+@keyframes bounceAlpha {
+    0% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+
+    25% {
+        opacity: 0;
+        transform: translateX(2vw) scale(0.9);
+    }
+
+    26% {
+        opacity: 0;
+        transform: translateX(-2vw) scale(0.9);
+    }
+
+    55% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+.round .arrow {
+    animation-name: bounceAlpha;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.round .arrow.primera {
+    animation-name: bounceAlpha;
+    animation-duration: 1.4s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.scrollBox {
+    display: block;
+    transition: all 0.3s;
+}
+
+.banner .active {
+    display: none;
+    transition: all 1s;
+}
+
+
+
+
+/* responsive */
+@media screen and (max-width: 768px) {
+    .banner {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner__text {
+        width: 100%;
+        padding: 11vw 0 0 2vw;
+    }
+
+    .banner__text p {
+        font-size: 2.6vw;
+        margin: 2vw 0;
+    }
+
+    .banner__img {
+        width: 100%;
+    }
+    
+    .home_body_image>.item_image {
+        width: 58vw;
+        height: 58vw;
+    }
+
+    .item_image::after {
+        width: 63vw;
+        height: 63vw;
+    }
+
+    .scrollBox {
+        display: none;
+        transition: all 0.3s;
+    }
+
+    .button2 {
+        padding: 1vw 2.3vw;
+        font-size: 2.7vw;
+        font-weight: 400;
+    }
+}

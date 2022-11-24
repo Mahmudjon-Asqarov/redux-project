@@ -1,0 +1,82 @@
+.contactModal {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactModal__wrapper {
+    background: #FFFFFF;
+    box-shadow: 0 0 8vw #D1E6FF;
+    border-radius: 1.4vw;
+    width: 25vw;
+    height: 21vw;
+    padding: 3vw;
+    position: relative;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactModal__wrapper p {
+    font-family: 'Zona Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vw;
+    line-height: 3vw;
+    color: #3e800c;
+    margin-top: 1vw;
+    text-align: center;
+    user-select: none;
+}
+
+.contactModalImg {
+    height: 8vw;
+    width: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.contactModalImg img {
+    width: 100%;
+}
+
+.overlayModal {
+    background-color: hsla(0, 0%, 0%, 0.349);
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+/* responsive */
+@media screen and (max-width: 768px) {
+    .contactModal__wrapper {
+        width: 60%;
+        height: auto;
+        padding: 14vw;
+    }
+
+    .contactModal__wrapper p {
+        font-weight: 300;
+        font-size: 3.5vw;
+        margin-top: 3vw;
+        line-height: 4.5vw;
+    }
+
+    .contactModalImg {
+        height: 17vw;
+        width: 17vw;
+    }
+}

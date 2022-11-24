@@ -1,0 +1,58 @@
+.about {
+    width: 100%;
+    background: #FFF6E0;
+    display: flex;
+    padding: 4vw 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about .rubberBand {
+    font-size: 4vw;
+}
+
+.about__text {
+    padding: 2vw 0 0 2vw;
+    width: 50%;
+}
+
+.about__img {
+    width: 50%;
+    padding-top: 4vw;
+}
+
+.about__desc p {
+    font-size: 1.4vw;
+    color: #682330;
+    width: 76%;
+    margin: 1vw 0;
+}
+
+/* responsive */
+@media screen and (max-width: 768px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about__text {
+        padding: 8vw 0 0 2vw;
+        width: 100%;
+    }
+
+    .about__img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about__desc p {
+        font-size: 2.4vw;
+        color: #682330;
+        width: 95%;
+        margin: 1vw 0;
+    }
+}
+
+
